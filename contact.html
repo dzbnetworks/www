@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZB Networks - Enterprise Networking and CyberSecurity Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Icons -->
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-apple.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html"><img src="logo.png" alt="DZB Networks" class="logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="index.html#services" class="nav-link">SERVICES</a></li>
+                <li><a href="index.html#about" class="nav-link">ABOUT</a></li>
+                <li><a href="contact.html" class="nav-link-contact active">CONTACT</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-header">
+                <h2>Ready to Secure Your Business?</h2>
+                <p>Get in touch with our security experts for a consultation and custom solution design</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>hello@dzbnetworks.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>7700 Windrose Ave<br>Plano, TX 75024<br>USA</p>
+                    </div>
+                </div>
+                <div class="contact-form-section">
+                    <div class="form-header">
+                        <div class="form-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Get In Touch</h3>
+                    </div>
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xjkepajw" method="POST" >
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Your company name">
+                        </div>
+                        <div class="form-group">
+                            <label for="details">Project Details *</label>
+                            <textarea id="details" name="details" placeholder="Tell us about your security needs, current infrastructure, and any specific concerns..." required></textarea>
+                        </div>
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAABx3zbCjd_ZR-hXj"></div>
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <i class="fas fa-shield-alt"></i>
+                            Submit
+                        </button>
+                        <p class="form-disclaimer">* All communications are confidential. We never share your information.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright footer -->
+    <footer>
+        <p class="copyright">Copyright © DZB Networks 2025. All rights reserved</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script src="script-contact.js"></script>
+</body>
+</html>
