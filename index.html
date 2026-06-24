@@ -1,295 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DZB Networks - Enterprise Networking and CyberSecurity Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <!-- Icons -->
-    <link rel="icon" href="favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon-apple.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DZB Networks — Networks Built Secure, Defended Always</title>
+  <meta name="description" content="DZB Networks designs resilient networks and defends them with 24/7 cybersecurity, managed IT, and compliance expertise. Secure infrastructure for modern business." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%2314b8a6' stroke-width='2.6' stroke-dasharray='3.2 2.6' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%2314b8a6'/%3E%3C/svg%3E" />
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-logo">
-                <a href="#home"><img src="logo.png" alt="DZB Networks" class="logo"></a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">HOME</a></li>
-                <li><a href="#services" class="nav-link">SERVICES</a></li>
-                <li><a href="#about" class="nav-link">ABOUT</a></li>
-                <li><a href="contact.html" class="nav-link-contact">CONTACT</a></li>
-            </ul>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="floating-icons">
-                <i class="fas fa-shield-alt icon-1"></i>
-                <i class="fas fa-lock icon-2"></i>
-                <i class="fas fa-server icon-3"></i>
-            </div>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="logo-mark">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="32" cy="32" r="21" stroke="url(#scn1)" stroke-width="2.6" stroke-dasharray="5 4" stroke-linecap="round"/><path d="M32 11 A21 21 0 0 1 49.8 22" stroke="#14b8a6" stroke-width="3.4" stroke-linecap="round"/><circle cx="32" cy="32" r="10" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><circle cx="32" cy="32" r="4.6" fill="#14b8a6"/><defs><linearGradient id="scn1" x1="11" y1="11" x2="53" y2="53" gradientUnits="userSpaceOnUse"><stop stop-color="#14b8a6"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs></svg>
+        </span>
+        <span><b>DZB</b> <span class="dim">Networks</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-primary nav-cta">Let's talk</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="pill"><span class="dot"></span> SOC monitoring live · 24 / 7 / 365</span>
+          <h1>Networks built <span class="gradient-text">secure</span>,<br />defended always.</h1>
+          <p class="lead">DZB Networks designs and runs the infrastructure your business depends on — then guards every packet, endpoint and identity with relentless cybersecurity.</p>
+          <div class="hero-badges">
+            <div class="hero-badge"><b>99.99%</b><span>uptime SLA</span></div>
+            <div class="hero-badge"><b>&lt;15min</b><span>threat response</span></div>
+            <div class="hero-badge"><b>ISO 27001</b><span>aligned</span></div>
+          </div>
         </div>
-        <div class="hero-content">
-            <h1 class="hero-title">
-                Secure Your Digital Future<br>
-            </h1>
-            <p class="hero-description">
-                Advanced cybersecurity, robust networking, and reliable datacenter solutions to protect and empower your business in the digital age.
-            </p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Get Protected Today</a>
-                <a href="#services" class="btn btn-secondary">Explore Services</a>
-            </div>
-            <div class="hero-badges">
-                <div class="badge">
-                    <i class="fas fa-check-circle"></i>
-                    Worldwide Projects
-                </div>
-                <div class="badge">
-                    <i class="fas fa-certificate"></i>
-                    Certified Experts
-                </div>
-                <div class="badge">
-                    <i class="fas fa-clock"></i>
-                    99.9% Uptime SLA
-                </div>
-            </div>
+        <div class="hero-visual reveal">
+          <div class="term-bar"><i></i><i></i><i></i><span>dzb-soc — secure shell</span></div>
+          <div class="term">
+            <div class="line"><span class="c-prompt">dzb@soc</span>:<span class="c-dim">~$</span> run perimeter-scan --live</div>
+            <div class="line"><span class="c-dim">›</span> probing 1,024 endpoints<span class="c-ok"> ok</span></div>
+            <div class="line"><span class="c-dim">›</span> firewall rules <span class="c-ok">enforced</span> · 0 drift</div>
+            <div class="line"><span class="c-dim">›</span> identity posture <span class="c-ok">verified</span></div>
+            <div class="line"><span class="c-warn">!</span> blocked 3 intrusion attempts</div>
+            <div class="line"><span class="c-dim">›</span> backups <span class="c-ok">encrypted</span> · DR ready</div>
+            <div class="line"><span class="c-prompt">dzb@soc</span>:<span class="c-dim">~$</span> status</div>
+            <div class="line"><span class="c-ok">● ALL SYSTEMS SECURE</span> <span class="cursor"></span></div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Core Services</h2>
-                <p>Comprehensive solutions to secure, connect, and empower your digital infrastructure</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon red">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Cybersecurity</h3>
-                    <p>Comprehensive security solutions including threat detection, vulnerability assessments, and incident response.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> 24/7 Security Monitoring</li>
-                        <li><i class="fas fa-check"></i> Penetration Testing</li>
-                        <li><i class="fas fa-check"></i> Compliance Management</li>
-                        <li><i class="fas fa-check"></i> Security Training</li>
-                        <li><i class="fas fa-check"></i> Firewall Management</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon blue">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Network Infrastructure</h3>
-                    <p>Design, implementation, and management of robust network architectures for optimal performance.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Network Design & Setup</li>
-                        <li><i class="fas fa-check"></i> SD-WAN Solutions</li>
-                        <li><i class="fas fa-check"></i> Network Optimization</li>
-                        <li><i class="fas fa-check"></i> Remote Access VPN</li>
-                        <li><i class="fas fa-check"></i> DNS/DDI Design</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon purple">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Datacenter Solutions</h3>
-                    <p>Reliable datacenter services with enterprise-grade infrastructure and managed services, including low-latency networks.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Connectivity Services</li>
-                        <li><i class="fas fa-check"></i> Cloud Migration</li>
-                        <li><i class="fas fa-check"></i> Disaster Recovery</li>
-                        <li><i class="fas fa-check"></i> Infrastructure Management</li>
-                        <li><i class="fas fa-check"></i> Low-Latency Expertise</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- TRUST STRIP -->
+    <section class="section-sm">
+      <div class="container">
+        <p class="center muted" style="font-family:var(--mono);font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:26px;">Trusted across regulated and high-stakes industries</p>
+        <div class="logo-strip">
+          <span class="lg">FINANCE</span><span class="lg">HEALTHCARE</span><span class="lg">LOGISTICS</span><span class="lg">PUBLIC SECTOR</span><span class="lg">SAAS</span><span class="lg">MANUFACTURING</span>
         </div>
+      </div>
     </section>
 
-    <!-- Additional Services -->
-    <section class="additional-services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Additional Expertise</h2>
-                <p>Specialized services to meet your unique requirements</p>
-            </div>
-            <div class="additional-grid">
-                <div class="additional-card">
-                    <div class="additional-icon blue">
-                        <i class="fas fa-user-shield"></i>
-                    </div>
-                    <h3>Identity & Access Management</h3>
-                    <p>Secure user authentication and authorization</p>
-                </div>
-                <div class="additional-card">
-                    <div class="additional-icon blue">
-                        <i class="fas fa-desktop"></i>
-                    </div>
-                    <h3>Security Operations Center</h3>
-                    <p>24/7 monitoring and incident response</p>
-                </div>
-                <div class="additional-card">
-                    <div class="additional-icon blue">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Data Protection & Backup</h3>
-                    <p>Comprehensive data security and recovery</p>
-                </div>
-                <div class="additional-card">
-                    <div class="additional-icon blue">
-                        <i class="fas fa-tachometer-alt"></i>
-                    </div>
-                    <h3>Performance Optimization</h3>
-                    <p>Network and system performance tuning</p>
-                </div>
-                <div class="additional-card">
-                    <div class="additional-icon blue">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Cloud Security</h3>
-                    <p>Multi-cloud security and compliance</p>
-                </div>
-                <div class="additional-card">
-                    <div class="additional-icon blue">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Security Consulting</h3>
-                    <p>Expert guidance and strategic planning</p>
-                </div>
-            </div>
+    <!-- SERVICES -->
+    <section class="section-sm" id="services" style="background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">What we do</span>
+          <h2>One partner for the full stack of <span class="gradient-text">network &amp; security</span></h2>
+          <p class="lead center" style="margin:14px auto 0;">From the cabling to the cloud to the SOC, DZB owns the outcome — so your team can stop firefighting and start building.</p>
         </div>
+        <div class="grid grid-4">
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4M6.5 10v4M17.5 10v4M10 17.5h4" stroke-linecap="round"/></svg></div>
+            <span class="card-tag">01 — Connect</span>
+            <h3>Network Design &amp; Management</h3>
+            <p>Resilient, high-throughput networks architected, deployed and monitored end to end.</p>
+            <ul class="card-list"><li>LAN / WAN / SD-WAN design</li><li>24/7 monitoring &amp; support</li><li>Wi-Fi &amp; zero-trust segmentation</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l8 3.4v5c0 4.8-3.3 8.9-8 10-4.7-1.1-8-5.2-8-10v-5z"/><path d="M9 12l2.2 2.2L15.5 10" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <span class="card-tag">02 — Defend</span>
+            <h3>Cybersecurity &amp; Threat Defense</h3>
+            <p>Continuous detection and response that stops attacks before they spread.</p>
+            <ul class="card-list"><li>24/7 SOC &amp; threat hunting</li><li>Penetration testing</li><li>Incident response &amp; recovery</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 18a4 4 0 010-8 5.5 5.5 0 0110.5-1.5A4.5 4.5 0 1117.5 18z"/><path d="M12 11v6M9.5 13.5L12 11l2.5 2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <span class="card-tag">03 — Operate</span>
+            <h3>Managed IT &amp; Cloud</h3>
+            <p>Your infrastructure run as a service — cloud, endpoints, backups and helpdesk.</p>
+            <ul class="card-list"><li>Cloud migration &amp; hosting</li><li>Backup &amp; disaster recovery</li><li>Managed endpoints &amp; helpdesk</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 12l2 2 4-4"/><rect x="4" y="4" width="16" height="16" rx="2.5"/></svg></div>
+            <span class="card-tag">04 — Assure</span>
+            <h3>Compliance &amp; Consulting</h3>
+            <p>Audit-ready posture mapped to the frameworks your customers and regulators expect.</p>
+            <ul class="card-list"><li>Risk &amp; gap assessments</li><li>ISO 27001 · GDPR · SOC 2</li><li>vCISO advisory</li></ul>
+          </article>
+        </div>
+        <div class="center" style="margin-top:40px;">
+          <a href="services.html" class="btn btn-ghost btn-arrow">See all services in detail <span class="btn-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Trusted by Industry Leaders</h2>
-                    <p>We are a premier cybersecurity and infrastructure firm with over 20 years of experience protecting critical business assets. Our team of certified experts delivers enterprise-grade solutions that scale with your business needs.</p>
-                    <div class="about-features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Industry-leading threat detection and response</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Scalable infrastructure solutions for growth</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Comprehensive compliance and risk management</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>24/7 support with dedicated account management</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="stat-number">100+</div>
-                        <div class="stat-label">Enterprise Clients</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Security Monitoring</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div class="stat-number">20+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="stat-number">99.9%</div>
-                        <div class="stat-label">Uptime Guarantee</div>
-                    </div>
-                </div>
-            </div>
-            <div class="mission">
-                <h3>Our Mission</h3>
-                <blockquote>
-                    "To provide uncompromising security and infrastructure solutions that enable businesses to innovate fearlessly in an increasingly connected world. We believe that robust cybersecurity shouldn't limit growth — it should accelerate it."
-                </blockquote>
-                <div class="quote-author">
-                    <div class="author-avatar">DZB</div>
-                    <div class="author-info">
-                        <div class="author-name">Chief Security Officer</div>
-                        <div class="author-company">DZB Networks</div>
-                    </div>
-                </div>
-            </div>
+    <!-- FEATURE: SOC -->
+    <section class="section">
+      <div class="container feature-row">
+        <div class="feature-copy reveal">
+          <span class="eyebrow">Security Operations Center</span>
+          <h2>A team watching your network while you sleep</h2>
+          <p class="lead">Our SOC fuses real-time telemetry, threat intelligence and human analysts to catch what automated tools miss — and acts in minutes, not days.</p>
+          <ul class="check-list">
+            <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Continuous threat hunting</b><span>Analysts proactively pursue indicators across endpoints, identity and cloud.</span></div></li>
+            <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Automated containment</b><span>Compromised hosts are isolated automatically the moment a threat is confirmed.</span></div></li>
+            <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Clear, jargon-free reporting</b><span>Monthly posture reviews you can take straight to the board.</span></div></li>
+          </ul>
         </div>
+        <div class="feature-visual reveal">
+          <div class="card code-panel">
+            <div class="term-bar"><i></i><i></i><i></i><span>threat-feed.log</span></div>
+            <div style="padding:22px;font-family:var(--mono);font-size:13px;line-height:2;">
+              <div><span class="c-ok">[09:42]</span> <span class="muted">phishing URL blocked · finance@</span></div>
+              <div><span class="c-ok">[09:51]</span> <span class="muted">brute-force throttled · vpn-gw</span></div>
+              <div><span class="c-warn">[10:07]</span> <span class="muted">anomalous login → quarantined</span></div>
+              <div><span class="c-ok">[10:08]</span> <span class="muted">host isolated · ticket #4821</span></div>
+              <div><span class="c-ok">[10:14]</span> <span class="muted">patch deployed · 142 devices</span></div>
+              <div><span class="c-ok">[10:30]</span> <span class="muted">backup verified · offsite</span></div>
+              <div style="margin-top:8px;"><span class="c-prompt">mttr</span> <span class="c-ok">11m 24s</span> <span class="muted">· this shift</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-header">
-                <h2>Ready to Secure Your Business?</h2>
-                <p>Get in touch with our security experts for a consultation and custom solution design</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h3>Visit Us</h3>
-                        <p>7700 Windrose Ave<br>Suite G300<br>Plano, TX 75024<br>USA</p>
-                    </div>
-
-
-                </div>
-                <div class="contact-form-section">
-                    <div class="form-header">
-                        <div class="form-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>Get In Touch</h3>
-                        <p>hello@dzbnetworks.com</p>
-                    </div>
-                        <p class="form-disclaimer">* All communications are confidential. We never share your information.</p>
-                    </form>
-                </div>
-            </div>
+    <!-- PROCESS -->
+    <section class="section section-sm" style="background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">How we engage</span>
+          <h2>From first call to fully defended</h2>
         </div>
+        <div class="steps">
+          <div class="step reveal"><span class="num">STEP 01</span><h3>Assess</h3><p>We map your network, assets and risks with a security review.</p></div>
+          <div class="step reveal"><span class="num">STEP 02</span><h3>Design</h3><p>A prioritized roadmap to close gaps and harden your infrastructure.</p></div>
+          <div class="step reveal"><span class="num">STEP 03</span><h3>Deploy</h3><p>We implement, migrate and configure with zero-disruption rollouts.</p></div>
+          <div class="step reveal"><span class="num">STEP 04</span><h3>Defend</h3><p>Ongoing monitoring, response and reporting keep you secure for good.</p></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Copyright footer -->
-    <footer>
-        <p class="copyright">Copyright © DZB Networks 2025. All rights reserved.</p>
-    </footer>
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <span class="eyebrow" style="justify-content:center;">Ready when you are</span>
+          <h2>Find out what's exposed — before someone else does.</h2>
+          <p class="lead">Book a 30-minute security review. We'll surface your top risks and show you exactly how to close them.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary btn-arrow">Get your review <span class="btn-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="logo-mark"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="32" cy="32" r="21" stroke="url(#scn2)" stroke-width="2.6" stroke-dasharray="5 4" stroke-linecap="round"/><path d="M32 11 A21 21 0 0 1 49.8 22" stroke="#14b8a6" stroke-width="3.4" stroke-linecap="round"/><circle cx="32" cy="32" r="10" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><circle cx="32" cy="32" r="4.6" fill="#14b8a6"/><defs><linearGradient id="scn2" x1="11" y1="11" x2="53" y2="53" gradientUnits="userSpaceOnUse"><stop stop-color="#14b8a6"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs></svg></span>
+            <span><b>DZB</b> <span class="dim">Networks</span></span>
+          </a>
+          <p>Networks built secure, defended always. Infrastructure and cybersecurity for businesses that can't afford downtime.</p>
+          <p>7700 Windrose Ave, Plano, TX 75024</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html#network">Network Design</a>
+            <a href="services.html#cybersecurity">Cybersecurity</a>
+            <a href="services.html#managed-it">Managed IT &amp; Cloud</a>
+            <a href="services.html#compliance">Compliance</a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+          </div>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <div class="footer-links">
+            <a href="mailto:hello@dzbnetworks.com">hello@dzbnetworks.com</a>
+            <a href="contact.html">Let's talk</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> DZB Networks. All rights reserved.</p>
+        <p>ISO 27001 aligned · SOC 2 ready · GDPR compliant</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
