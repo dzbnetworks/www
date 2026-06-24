@@ -120,7 +120,7 @@
   if (yr) yr.textContent = new Date().getFullYear();
 })();
 
-/* Theme toggle — swap dark/light stylesheet, persist in localStorage */
+/* Theme toggle — swap dark/light stylesheet */
 (function(){
   var link = document.getElementById("theme-css");
   var btn  = document.getElementById("theme-btn");
@@ -139,7 +139,7 @@
   btn.addEventListener("click", function(){
     var goLight = !isLight();
     link.setAttribute("href", goLight ? LIGHT_CSS : DARK_CSS);
-    try{ localStorage.setItem("dzb-theme", goLight ? "light" : "dark"); }catch(e){}
+    try{ sessionStorage.setItem("dzb-theme", goLight ? "light" : "dark"); }catch(e){}
     render();
   });
 })();
