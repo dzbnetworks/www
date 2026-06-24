@@ -101,20 +101,6 @@
     counters.forEach(function (c) { cio.observe(c); });
   }
 
-  // Contact form (demo handler)
-  var form = document.querySelector("#contact-form");
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var note = form.querySelector(".form-status");
-      if (note) {
-        note.textContent = "Thanks — your message has been queued. We'll reply within one business day.";
-        note.style.color = "var(--green)";
-      }
-      form.reset();
-    });
-  }
-
   // Footer year
   var yr = document.querySelector("[data-year]");
   if (yr) yr.textContent = new Date().getFullYear();
