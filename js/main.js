@@ -101,7 +101,45 @@
     counters.forEach(function (c) { cio.observe(c); });
   }
 
+  // Contact form (demo handler)
+  var form = document.querySelector("#contact-form");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var note = form.querySelector(".form-status");
+      if (note) {
+        note.textContent = "Thanks — your message has been queued. We'll reply within one business day.";
+        note.style.color = "var(--green)";
+      }
+      form.reset();
+    });
+  }
+
   // Footer year
   var yr = document.querySelector("[data-year]");
   if (yr) yr.textContent = new Date().getFullYear();
+})();
+
+/* Theme toggle — swap dark/light stylesheet, persist in localStorage */
+(function(){
+  var link = document.getElementById("theme-css");
+  var btn  = document.getElementById("theme-btn");
+  if(!link || !btn) return;
+  var SUN  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.4"/><path d="M12 2v2.6M12 19.4V22M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M2 12h2.6M19.4 12H22M4.6 19.4l1.9-1.9M17.5 6.5l1.9-1.9" stroke-linecap="round"/></svg>';
+  var MOON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  var DARK_CSS = "css/style.css";
+  var LIGHT_CSS = "css/style-light.css";
+  function isLight(){ return /style-light\.css/.test(link.getAttribute("href")); }
+  function render(){
+    // when light is active, button offers "Dark mode" (moon); when dark, offers "Light mode" (sun)
+    btn.innerHTML = (isLight() ? MOON : SUN) + '<span class="tt-label">' + (isLight() ? "Dark mode" : "Light mode") + '</span>';
+    btn.setAttribute("aria-label", isLight() ? "Switch to dark theme" : "Switch to light theme");
+  }
+  render();
+  btn.addEventListener("click", function(){
+    var goLight = !isLight();
+    link.setAttribute("href", goLight ? LIGHT_CSS : DARK_CSS);
+    try{ localStorage.setItem("dzb-theme", goLight ? "light" : "dark"); }catch(e){}
+    render();
+  });
 })();
